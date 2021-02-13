@@ -1,0 +1,86 @@
+:root {
+    --bg: #282828;
+    --bg0-h: #1d2021;
+    --bg0-s: #32302f;
+    --bg1: #3c3836;
+    --bg2: #504945;
+    --bg3: #665c54;
+    --bg4: #7c6f64;
+
+    --fg: #ebdbb2;
+    --fg0: #fbf1c7;
+    --fg1: #ebdbb2;
+    --fg2: #d5c4a1;
+    --fg3: #bdae93;
+    --fg4: #a89984;
+
+    --red: #cc241d;
+    --green: #98971a;
+    --yellow: #d79921;
+    --blue: #458588;
+    --purple: #b16286;
+    --aqua: #689d6a;
+    --orange: #d65d0e;
+
+    --faded-red: #fb4934;
+    --faded-green: #b8bb26;
+    --faded-yellow: #fabd2f;
+    --faded-blue: #83a598;
+    --faded-purple: #d3869b;
+    --faded-aqua: #8ec07c;
+    --faded-orange: #fe8019;
+
+    --gray: #a89984;
+    --dark-gray: #928374;
+}
+
+body {
+    font: 16px/1.25 sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--bg);
+    color: var(--fg);
+}
+
+header {
+    background: var(--green);
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header a {
+    color: var(--fg0) !important;
+    padding: 5px;
+}
+header a#title-link {
+    font-size: 18px;
+}
+header > div#header-menu > span.menu-item + span.menu-item:before {
+    content: " | "
+}
+
+@media only screen and (max-width: 600px) {
+    main, footer {
+        padding: 0 10px;
+    }
+}
+
+article.list-item {
+    margin: 15px 0;
+}
+article.single {
+    margin-top: 15px;
+}
+article.single > h1 {
+    margin-top: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+a {
+    color: var(--aqua);
+}
