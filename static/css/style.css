@@ -64,6 +64,9 @@ header > div#header-menu > span.menu-item + span.menu-item:before {
     main, footer {
         padding: 0 10px;
     }
+    header {
+        flex-direction: column;
+    }
 }
 
 article.list-item {
@@ -83,4 +86,8 @@ footer {
 
 a {
     color: var(--aqua);
+}
+
+li {
+    margin: 10px 0;
 }
